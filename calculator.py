@@ -32,6 +32,7 @@ def number_kwarg(**number):
 number_kwarg(interger = "2309", interger2 = "349")
 ''' 
 
+'''
 x = int(input("Whats x? "))
 y = int(input("Whats y? "))
 
@@ -39,3 +40,43 @@ if x < y:
     print("x is less than y")
 elif x == y: print("x is equal to y")
 else: print("x is greater than y")
+'''
+
+'''
+score = int(input("Score: "))
+
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+elif score >= 60:
+    print("Grade: D")
+else: 
+    print("Grade: F")
+    '''
+
+'''
+def main(): 
+    x = int(input("Whats x? "))
+    if is_even(x):
+        print("Even")
+    else:
+        print("Odd")
+
+def is_even(n):
+    return n % 2 == 0
+    
+main()
+'''
+
+name = input("What's your name? ")
+
+match name:
+    case "Harry" | "Hermione" | "Ron":
+        print("Gryffindor")
+    case "Draco":
+        print("Slytherin")
+    case _:
+        print("Who?")
